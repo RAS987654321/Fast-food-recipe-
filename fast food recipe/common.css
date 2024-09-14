@@ -1,0 +1,107 @@
+/* Reset some default styles */
+* {
+    margin: 30;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color:rgb(6, 29, 235);
+    background-color:rgb(248, 248, 243);
+}
+
+/* Header styles */
+header {
+    background: #100f12;
+    color: #d10c0c;
+    padding: 1rem 0;
+
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: yellow;
+    .emoji {
+        font-size: 4em; /* Adjust the size of the emoji */
+        vertical-align: middle; /* Align emoji vertically with the text */
+        margin-left: 20px; /* Add some space between the emoji and the text */
+    }
+    
+
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #b94a0a;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 0.5rem 1rem;
+    transition: background;
+}
+
+nav ul li a:hover {
+    background: #d1f905;
+    border-radius: 5px;
+}
+
+/* Main content styles */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+}
+
+.recipe {
+    margin-top: 2rem;
+}
+
+.recipe h2 {
+    border-bottom: 2px solid #11db72;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    margin-left: 2rem;
+}
+
+/* Footer styles */
+footer {
+    background: #7bd217;
+    color: #190707;
+    text-align: center;
+    
+    position: fixed;
+   
+    width: 100%;
+   
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
